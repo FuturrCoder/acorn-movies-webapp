@@ -24,13 +24,24 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>jQuery</li>
-      </ul>
+    <h1>ACORN MOVIES</h1>
+
+    <div class="search-container">
+      <form id="movie-search">
+        <h3>Search for movies</h3>
+        <input id='movie-keywords' type="text" name="movie-keywords" placeholder="Search">
+        <input id="search-movies" type="submit" name="submit" value="Search for Movies">
+      </form>
+    </div>
+
+    <!-- <div class="popular-movies-wrapper">
+      <h3 class="list-header">Most popular movies</h3>
+      <ul class="movie-list" id="popular-movies"></ul>
+    </div> -->
+
+    <div class="search-wrapper">
+      <em class="list-header" id="search-header"></em>
+      <ul class="movie-list" id="search-results"></ul>
     </div>
 
     <!-- build:js scripts/vendor.js -->
