@@ -5,6 +5,7 @@ const ui = require('./ui')
 
 const onMovieSearch = (event) => {
   event.preventDefault()
+  $('#search-results').html('')
   let search = document.getElementById('movie-keywords').value
   $('#search-header').text(`Search results for: "${search}"`)
   api.movieSearch(search)
